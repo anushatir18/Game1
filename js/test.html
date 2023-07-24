@@ -14,28 +14,37 @@
     //     document.getElementById("demo").innerHTML = finalNumber;
     //    } 
 
-    function number(){
-    const x = Math.random();
-    const scaledNumber = x * 3;
-    const finalNumber = Math.floor(scaledNumber) + 1;
-    document.getElementById("bot").innerHTML = finalNumber;
+let user;
 
+function updateOutput() {
+  document.getElementById('output').innerText = user;
+}
 
-    if(finalNumber==1){
-        document.getElementById("img").innerHTML = "../img/stone.png";
-    }
-    else if(finalNumber==2){
-        document.getElementById("img").innerHTML = "../img/paper.png";
-    }
-    else{
-        document.getElementById("img").innerHTML = "../img/scissor.png";
-    }
+function stonee() {
+    const imageElement = document.getElementById('imgg');
+    imageElement.src = stone;
+    user = 1;
+    updateOutput();
+}
 
-} 
+function paperr() {
+    const imageElement = document.getElementById('imgg');
+    imageElement.src = stone;
+    user = 2;
+    updateOutput();
+}
+
+function scissorr() {
+    const imageElement = document.getElementById('imgg');
+    imageElement.src = stone;
+    user = 3;
+    updateOutput();
+}
+
 
     </script>
 
     <h1 id="demo"></h1>
-    <button onclick="number()">CLICK ME</button>
+    <button onclick="result()">CLICK ME</button>
 </body>
 </html>
