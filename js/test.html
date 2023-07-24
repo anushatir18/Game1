@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    function number(){
+    //     const x = Math.random();
+    //     const scaledNumber = x * 3;
+    //     const finalNumber = Math.floor(scaledNumber) + 1;
+    //     document.getElementById("demo").innerHTML = finalNumber;
+    //    } 
+
+    function number(){
+    const x = Math.random();
+    const scaledNumber = x * 3;
+    const finalNumber = Math.floor(scaledNumber) + 1;
+    document.getElementById("bot").innerHTML = finalNumber;
+
+
+    if(finalNumber==1){
+        document.getElementById("img").innerHTML = "../img/stone.png";
+    }
+    else if(finalNumber==2){
+        document.getElementById("img").innerHTML = "../img/paper.png";
+    }
+    else{
+        document.getElementById("img").innerHTML = "../img/scissor.png";
+    }
+
+} 
+
+    </script>
+
+    <h1 id="demo"></h1>
+    <button onclick="number()">CLICK ME</button>
+</body>
+</html>

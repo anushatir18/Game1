@@ -18,11 +18,35 @@ body{
     font-size: 20px;
 }
 #play{
-    height: 60vh;
+    height:auto;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
 
+}
+.players{
+    display: flex;
+    justify-content:center;
+    color:yellow;
+
+}
+.img{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+img{
+    height: 300px;
+    width: 300px;
+   
+}
+.options{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: end;
 }
 #player1{
     width: 40%;
