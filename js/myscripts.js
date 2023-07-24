@@ -1,12 +1,13 @@
 var stone ="img/stone.png";
 var scissor ="img/scissor.png";
 var paper ="img/paper.png";
-var user;
 
-function number(){
     var x = Math.random();
     var scaledNumber = x * 3;
     var finalNumber = Math.floor(scaledNumber) + 1;
+var user;
+
+function number(){
     const imageElement = document.getElementById('img');
 
     if(finalNumber==1){
