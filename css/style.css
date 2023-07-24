@@ -2,31 +2,41 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-    
-.box{ 
     height:100%;
     border:40px solid black;
     border-width: 20px;
+    overflow: hidden;
 }
 
-#game{
-    height:100%;
-    width: 100%;
+
+#Headding{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     color: darkcyan;
-    font-size: 35px;
+    font-size: 20px;
+}
+#play{
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#player1{
+    width: 40%;
+    height: 100%;
+    background-color:gray;
+}
+#player2{
+    width: 40%;
+    height: 100%;
+    background-color:rgb(117, 4, 4);
+    
 }
 
 .but{
-    height:100%;
-    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,8 +56,8 @@ input[type=button] {
     margin: 20px 20px;
     cursor: pointer;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.711);
- }
- input:hover {
+}
+input:hover {
 background-color: #2EE59D;
 box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
 color: #fff;
